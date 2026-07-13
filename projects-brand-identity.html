@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Identity | Danish Uzair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar reveal-nav"><a class="logo" href="index.html#home">DU.</a><nav aria-label="Main navigation"><ul><li><a href="index.html#about">About</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#experience">Experience</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav></header>
+    <main class="work-page">
+        <section class="work-hero section-reveal"><div class="work-hero-banner"><img src="assets/images/project2.jpg" alt="Brand identity preview"><div class="work-hero-content"><span class="eyebrow">Brand Identity</span><h1>Logo Systems, Identity Direction &amp; Brand Presentation</h1><p>A Behance-inspired collection of editable brand identity case studies built with real HTML sections and replaceable artwork areas.</p></div></div></section>
+        <section class="study-section section-reveal">
+            <div class="section-title"><span>Brand Projects</span><h2>Featured Identity Work</h2><p>Four modular identity case studies ready for logos, concepts, palettes, typography, mockups, and guideline previews.</p></div>
+            <div class="case-grid">
+                <a class="case-card" href="brand-logo-design-01.html"><div class="case-card-image"><img src="assets/images/project2.jpg" alt="Logo Design Project 01"></div><div class="case-card-body"><h2>Logo Design Project 01</h2><span class="case-client">Client: Placeholder Brand</span><p>A complete identity presentation structure for logo exploration, visual language, and brand rollout.</p><div class="tag-row"><span>Logo</span><span>Identity</span><span>Guidelines</span></div><span class="case-button">View Case Study &rarr;</span></div></a>
+                <a class="case-card" href="brand-logo-design-02.html"><div class="case-card-image"><img src="assets/images/project1.jpg" alt="Logo Design Project 02"></div><div class="case-card-body"><h2>Logo Design Project 02</h2><span class="case-client">Client: Placeholder Brand</span><p>A refined brand direction template for concept, variations, stationery, and presentation mockups.</p><div class="tag-row"><span>Branding</span><span>Stationery</span><span>Mockups</span></div><span class="case-button">View Case Study &rarr;</span></div></a>
+                <a class="case-card" href="brand-logo-design-03.html"><div class="case-card-image"><img src="assets/images/project3.jpg" alt="Logo Design Project 03"></div><div class="case-card-body"><h2>Logo Design Project 03</h2><span class="case-client">Client: Placeholder Brand</span><p>A premium identity case study layout for research, sketching, logo marks, and color systems.</p><div class="tag-row"><span>Research</span><span>Logo Mark</span><span>Palette</span></div><span class="case-button">View Case Study &rarr;</span></div></a>
+                <a class="case-card" href="brand-logo-design-04.html"><div class="case-card-image"><img src="assets/images/project4.jpg" alt="Logo Design Project 04"></div><div class="case-card-body"><h2>Logo Design Project 04</h2><span class="case-client">Client: Placeholder Brand</span><p>A reusable brand presentation page for identity systems, applications, and final brand decks.</p><div class="tag-row"><span>Typography</span><span>Applications</span><span>Presentation</span></div><span class="case-button">View Case Study &rarr;</span></div></a>
+            </div>
+        </section>
+        <section class="study-section section-reveal"><a class="next-project" href="index.html#projects"><span>Back To Categories</span><strong>Selected Work</strong></a></section>
+    </main>
+    <script>const revealItems=document.querySelectorAll(".section-reveal,.case-card");revealItems.forEach((item,index)=>{item.classList.add("reveal-item");item.style.setProperty("--delay",`${Math.min(index%6,5)*70}ms`)});const observer=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target)}})},{threshold:.16,rootMargin:"0px 0px -70px 0px"});revealItems.forEach((item)=>observer.observe(item));window.addEventListener("scroll",()=>{document.body.classList.toggle("has-scrolled",window.scrollY>24)},{passive:true});</script>
+</body>
+</html>

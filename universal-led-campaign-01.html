@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal LED Campaign 1 | Danish Uzair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar reveal-nav">
+        <a class="logo" href="index.html#home">DU.</a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="work-page">
+        <section class="work-hero section-reveal">
+            <div class="work-hero-banner">
+                <img src="assets/images/project1.jpg" alt="Universal LED campaign hero">
+                <div class="work-hero-content">
+                    <span class="eyebrow">Social Media Case Study</span>
+                    <h1>Universal LED Campaign 1</h1>
+                    <p>A premium social media campaign system created for LED signage promotion, combining product clarity, bold offer messaging, and strong visual hierarchy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section section-reveal">
+            <h2>Project Overview</h2>
+            <p>This case study presents a modular social media direction for Universal LED, designed to communicate signage services quickly while keeping the brand polished, confident, and easy to understand.</p>
+        </section>
+
+        <section class="study-section section-reveal">
+            <div class="study-meta-grid">
+                <div class="study-meta-card"><span>Client</span><strong>Universal LED</strong></div>
+                <div class="study-meta-card"><span>Role</span><strong>Graphic Designer | Video Editor</strong></div>
+                <div class="study-meta-card"><span>Duration</span><strong>Campaign Sprint</strong></div>
+                <div class="study-meta-card"><span>Category</span><strong>Social Media Design</strong></div>
+            </div>
+        </section>
+
+        <section class="study-section section-reveal">
+            <h2>Challenge</h2>
+            <p>The challenge was to make a technical signage service feel instantly understandable on fast-moving social feeds while keeping the visuals premium enough for business clients.</p>
+        </section>
+
+        <section class="study-section section-reveal">
+            <h2>Solution</h2>
+            <p>I designed a flexible post system with bold headings, clear product imagery, strong contrast, and repeatable layouts that can scale across offers, announcements, and lead-generation campaigns.</p>
+        </section>
+
+        <section class="study-section section-reveal">
+            <h2>Large Images</h2>
+            <div class="media-grid">
+                <div class="media-frame"><img src="assets/images/project1.jpg" alt="Campaign large artwork 1"></div>
+                <div class="media-frame"><img src="assets/images/project2.jpg" alt="Campaign large artwork 2"></div>
+            </div>
+        </section>
+
+        <section class="study-section section-reveal">
+            <h2>Social Media Posts</h2>
+            <div class="media-grid three">
+                <div class="media-frame"><img src="assets/images/project1.jpg" alt="Social post design 1"></div>
+                <div class="media-frame"><img src="assets/images/project2.jpg" alt="Social post design 2"></div>
+                <div class="media-frame"><img src="assets/images/project3.jpg" alt="Social post design 3"></div>
+            </div>
+        </section>
+
+        <section class="study-section section-reveal">
+            <h2>Stories</h2>
+            <div class="media-grid three">
+                <div class="media-frame story-frame"><img src="assets/images/project1.jpg" alt="Story design 1"></div>
+                <div class="media-frame story-frame"><img src="assets/images/project2.jpg" alt="Story design 2"></div>
+                <div class="media-frame story-frame"><img src="assets/images/project3.jpg" alt="Story design 3"></div>
+            </div>
+        </section>
+
+        <section class="study-section section-reveal">
+            <h2>Carousel</h2>
+            <div class="media-grid three">
+                <div class="media-frame carousel-frame"><img src="assets/images/project1.jpg" alt="Carousel slide 1"></div>
+                <div class="media-frame carousel-frame"><img src="assets/images/project2.jpg" alt="Carousel slide 2"></div>
+                <div class="media-frame carousel-frame"><img src="assets/images/project3.jpg" alt="Carousel slide 3"></div>
+            </div>
+        </section>
+
+        <section class="study-section section-reveal">
+            <h2>Videos</h2>
+            <p>Video placements can be added here using standard HTML video tags. Replace this section with reels, promos, or animated campaign cuts when assets are ready.</p>
+            <div class="media-grid">
+                <div class="media-frame"><img src="assets/images/project4.jpg" alt="Video thumbnail 1"></div>
+                <div class="media-frame"><img src="assets/images/project1.jpg" alt="Video thumbnail 2"></div>
+            </div>
+        </section>
+
+        <section class="study-section section-reveal">
+            <h2>Tools Used</h2>
+            <div class="tools-list"><span>Photoshop</span><span>Illustrator</span><span>Premiere Pro</span><span>Canva</span></div>
+        </section>
+
+        <section class="study-section section-reveal">
+            <h2>Final Result</h2>
+            <p>The final direction created a consistent and reusable campaign style that can support lead generation, product promotion, and brand recognition across Universal LED's social channels.</p>
+        </section>
+
+        <section class="study-section section-reveal">
+            <a class="next-project" href="universal-led-campaign-02.html">
+                <span>Next Project</span>
+                <strong>Universal LED Campaign 2</strong>
+            </a>
+        </section>
+    </main>
+
+    <script>
+        const revealItems = document.querySelectorAll(".section-reveal, .study-meta-card, .media-frame");
+        revealItems.forEach((item, index) => {
+            item.classList.add("reveal-item");
+            item.style.setProperty("--delay", `${Math.min(index % 6, 5) * 70}ms`);
+        });
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.16, rootMargin: "0px 0px -70px 0px" });
+        revealItems.forEach((item) => observer.observe(item));
+        window.addEventListener("scroll", () => {
+            document.body.classList.toggle("has-scrolled", window.scrollY > 24);
+        }, { passive: true });
+    </script>
+</body>
+</html>

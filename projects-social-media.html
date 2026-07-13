@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Design | Danish Uzair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar reveal-nav">
+        <a class="logo" href="index.html#home">DU.</a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="work-page">
+        <section class="work-hero section-reveal">
+            <div class="work-hero-banner">
+                <img src="assets/images/project1.jpg" alt="Social media design campaign preview">
+                <div class="work-hero-content">
+                    <span class="eyebrow">Social Media Design</span>
+                    <h1>Campaigns Built For Scroll-Stopping Impact</h1>
+                    <p>A premium collection of editable social media case studies covering campaign design, content systems, and platform-ready visuals for brands and businesses.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="study-section section-reveal">
+            <div class="section-title">
+                <span>Case Studies</span>
+                <h2>Featured Social Campaigns</h2>
+                <p>Each project is structured as a real case study with editable text, reusable sections, and artwork-focused image areas.</p>
+            </div>
+
+            <div class="case-grid">
+                <a class="case-card" href="universal-led-campaign-01.html">
+                    <div class="case-card-image">
+                        <img src="assets/images/project1.jpg" alt="Universal LED Campaign 1 preview">
+                    </div>
+                    <div class="case-card-body">
+                        <h2>Universal LED Campaign 1</h2>
+                        <span class="case-client">Client: Universal LED</span>
+                        <p>A social campaign system for LED signage products, created to make technical offers feel clear, premium, and conversion-focused.</p>
+                        <div class="tag-row"><span>Social Posts</span><span>Campaign Design</span><span>LED Signage</span></div>
+                        <span class="case-button">View Case Study &rarr;</span>
+                    </div>
+                </a>
+
+                <a class="case-card" href="universal-led-campaign-02.html">
+                    <div class="case-card-image">
+                        <img src="assets/images/project2.jpg" alt="Universal LED Campaign 2 preview">
+                    </div>
+                    <div class="case-card-body">
+                        <h2>Universal LED Campaign 2</h2>
+                        <span class="case-client">Client: Universal LED</span>
+                        <p>A second campaign direction focused on promotional layouts, product storytelling, and bold call-to-action driven content.</p>
+                        <div class="tag-row"><span>Ads</span><span>Product Visuals</span><span>Social Media</span></div>
+                        <span class="case-button">View Case Study &rarr;</span>
+                    </div>
+                </a>
+
+                <a class="case-card" href="worldke-campaign.html">
+                    <div class="case-card-image">
+                        <img src="assets/images/project3.jpg" alt="Worldke campaign preview">
+                    </div>
+                    <div class="case-card-body">
+                        <h2>Worldke Campaign</h2>
+                        <span class="case-client">Client: Worldke</span>
+                        <p>Marketing creatives and affiliate campaign assets designed for fast digital communication across multiple platforms.</p>
+                        <div class="tag-row"><span>Marketing</span><span>Affiliate</span><span>Promotional</span></div>
+                        <span class="case-button">View Case Study &rarr;</span>
+                    </div>
+                </a>
+
+                <a class="case-card" href="seo-factors-campaign.html">
+                    <div class="case-card-image">
+                        <img src="assets/images/project4.jpg" alt="SEO Factors campaign preview">
+                    </div>
+                    <div class="case-card-body">
+                        <h2>SEO Factors Campaign</h2>
+                        <span class="case-client">Client: SEO Factors</span>
+                        <p>Clean digital visuals, web-ready social posts, and service promotion graphics designed for a professional marketing audience.</p>
+                        <div class="tag-row"><span>Web Graphics</span><span>Social Posts</span><span>SEO</span></div>
+                        <span class="case-button">View Case Study &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="study-section section-reveal">
+            <a class="next-project" href="index.html#projects">
+                <span>Back To Categories</span>
+                <strong>Explore More Project Types</strong>
+            </a>
+        </section>
+    </main>
+
+    <script>
+        const revealItems = document.querySelectorAll(".section-reveal, .case-card");
+        revealItems.forEach((item, index) => {
+            item.classList.add("reveal-item");
+            item.style.setProperty("--delay", `${Math.min(index % 6, 5) * 70}ms`);
+        });
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.16, rootMargin: "0px 0px -70px 0px" });
+        revealItems.forEach((item) => observer.observe(item));
+        window.addEventListener("scroll", () => {
+            document.body.classList.toggle("has-scrolled", window.scrollY > 24);
+        }, { passive: true });
+    </script>
+</body>
+</html>

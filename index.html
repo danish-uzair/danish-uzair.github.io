@@ -3,13 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danish Uzair | Portfolio</title>
+    <title>Danish Uzair | Graphic Designer & Video Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar reveal-nav">
+        <a class="logo" href="#home">DU.</a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>Welcome to My Portfolio</h1>
+    <main>
+        <!-- ================= HERO ================= -->
+        <section class="hero section-reveal" id="home">
+            <div class="hero-left">
+                <p class="hero-tag">Creative Visual Designer</p>
+                <h1>Danish Uzair</h1>
+                <h2>Creative Designer <span>&amp;</span><br>Video Editor</h2>
+                <p class="description">
+                    Helping brands create bold identities, sharp marketing visuals, and
+                    scroll-stopping video content for digital platforms.
+                </p>
+                <div class="buttons">
+                    <a href="#projects" class="primary-btn">View Work</a>
+                    <a href="assets/files/danish-uzair-resume.pdf" class="secondary-btn" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a href="#contact" class="secondary-btn">Hire Me</a>
+                </div>
+            </div>
 
-<p>Graphic Designer & Video Editor</p>
+            <div class="hero-right">
+                <div class="showcase-orb hero-photo-wrap">
+                    <img src="assets/images/danish-uzair-profile.png" alt="Danish Uzair profile photo" class="hero-photo">
+                    <div class="orbit-tag-group group-one">
+                        <span>Branding</span>
+                        <span>Video Editing</span>
+                        <span>AI</span>
+                    </div>
+                    <div class="orbit-tag-group group-two">
+                        <span>Creative</span>
+                        <span>Motion Graphics</span>
+                        <span>Logo Design</span>
+                    </div>
+                    <div class="orbit-tag-group group-three">
+                        <span>Reels</span>
+                        <span>Social Media</span>
+                        <span>YouTube</span>
+                    </div>
+                    <div class="orbit-tag-group group-four">
+                        <span>Shorts</span>
+                        <span>TikTok</span>
+                        <span>Ads</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- ================= PROJECTS ================= -->
+        <section class="projects section-reveal" id="projects">
+            <div class="section-title">
+                <span>Project Categories</span>
+                <h2>Selected Work</h2>
+                <p>Explore focused case-study collections across design, branding, marketing, video, AI visuals, and motion.</p>
+            </div>
+
+            <div class="project-grid category-grid">
+                <a class="project-card category-card" href="projects-social-media.html">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Social media design category">
+                        <span class="project-overlay">Open Category &rarr;</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="category-count">04 Case Studies</span>
+                        <h3>Social Media Design</h3>
+                        <p>Campaign visuals, carousels, launch posts, and platform-ready brand content.</p>
+                        <span>Instagram &bull; Facebook &bull; LinkedIn</span>
+                    </div>
+                </a>
+
+                <a class="project-card category-card" href="projects-brand-identity.html">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="Brand identity category">
+                        <span class="project-overlay">Open Category &rarr;</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="category-count">Brand Systems</span>
+                        <h3>Brand Identity</h3>
+                        <p>Logos, visual systems, guidelines, and consistent identity direction.</p>
+                        <span>Logo &bull; Branding &bull; Visual Identity</span>
+                    </div>
+                </a>
+
+                <a class="project-card category-card" href="projects-marketing-design.html">
+                    <div class="project-image">
+                        <img src="assets/images/project3.jpg" alt="Marketing design category">
+                        <span class="project-overlay">Open Category &rarr;</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="category-count">Campaign Assets</span>
+                        <h3>Marketing Design</h3>
+                        <p>Promotional creatives, product graphics, paid ads, and e-commerce visuals.</p>
+                        <span>Ads &bull; Product &bull; E-commerce</span>
+                    </div>
+                </a>
+
+                <a class="project-card category-card" href="projects-video-editing.html">
+                    <div class="project-image">
+                        <img src="assets/images/project4.jpg" alt="Video editing category">
+                        <span class="project-overlay">Open Category &rarr;</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="category-count">Video Work</span>
+                        <h3>Video Editing</h3>
+                        <p>Short-form edits, YouTube videos, reels, promotional videos, and storytelling.</p>
+                        <span>Reels &bull; Shorts &bull; YouTube</span>
+                    </div>
+                </a>
+
+                <a class="project-card category-card" href="projects-ai-creative.html">
+                    <div class="project-image project-visual ai-visual">
+                        <span class="project-overlay">Open Category &rarr;</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="category-count">AI Concepts</span>
+                        <h3>AI Creative Visuals</h3>
+                        <p>AI-assisted campaign concepts, visual experiments, and creative direction.</p>
+                        <span>AI Images &bull; Concepts &bull; Campaign Art</span>
+                    </div>
+                </a>
+
+                <a class="project-card category-card" href="projects-motion-graphics.html">
+                    <div class="project-image project-visual motion-visual">
+                        <span class="project-overlay">Open Category &rarr;</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="category-count">Motion Design</span>
+                        <h3>Motion Graphics</h3>
+                        <p>Animated posts, logo motion, visual effects, and promo motion assets.</p>
+                        <span>Logo Animation &bull; Promos &bull; Effects</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-cta">
+                <a href="https://www.behance.net/danishuzaer" class="secondary-btn" target="_blank" rel="noopener noreferrer">View More on Behance</a>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+        <section class="about section-reveal" id="about">
+            <div class="section-title">
+                <span>About Me</span>
+                <h2>Creative Designer With 6+ Years Experience</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card"><h3>6+</h3><p>Years Experience</p></div>
+                <div class="about-card"><h3>200+</h3><p>Creative Projects</p></div>
+                <div class="about-card"><h3>Adobe</h3><p>Photoshop, Illustrator, Premiere Pro, After Effects</p></div>
+                <div class="about-card"><h3>Services</h3><p>Graphic Design, Video Editing, Branding &amp; Social Media</p></div>
+                <div class="about-card"><h3>Clients</h3><p>International &amp; Local Businesses</p></div>
+                <div class="about-card"><h3>Status</h3><p>Available For Freelance Projects</p></div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE ================= -->
+        <section class="experience section-reveal" id="experience">
+            <div class="section-title">
+                <span>Experience</span>
+                <h2>Career Journey</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-year">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Graphic Designer | Video Editor</h3>
+                        <h4>Universal LED (Remote - USA)</h4>
+                        <p>Created social media content, LED signage presentations, promotional videos, AI-assisted visuals, and maintained brand consistency across digital platforms.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">2021 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Graphic Designer | Video Editor</h3>
+                        <h4>Worldke</h4>
+                        <p>Produced graphic designs, marketing creatives, animated banners, promotional videos, and affiliate marketing assets for digital campaigns.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">2020 - 2021</div>
+                    <div class="timeline-content">
+                        <h3>Graphic &amp; Web Designer</h3>
+                        <h4>SEO Factors</h4>
+                        <p>Designed website layouts, social media graphics, banners, product images, and SEO-friendly visual content.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">2019</div>
+                    <div class="timeline-content">
+                        <h3>Graphic &amp; Web Design Internship</h3>
+                        <h4>Al Rayyan Academy</h4>
+                        <p>Customized WordPress themes, designed branding assets, and created graphics for educational and digital platforms.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= CREATIVE STACK ================= -->
+        <section class="skills section-reveal">
+            <div class="section-title">
+                <span>Creative Stack</span>
+                <h2>Tools I Use Every Day</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3><span>D</span> Design</h3>
+                    <div class="skill-tags">
+                        <span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Figma</span><span>Canva</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3><span>V</span> Video</h3>
+                    <div class="skill-tags">
+                        <span>Premiere Pro</span><span>After Effects</span><span>CapCut</span><span>YouTube Editing</span><span>Reels Editing</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3><span>AI</span> AI Creative</h3>
+                    <div class="skill-tags">
+                        <span>Midjourney</span><span>Veo</span><span>Sora</span><span>Grok</span><span>DALL-E</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SERVICES ================= -->
+        <section class="services section-reveal" id="services">
+            <div class="section-title">
+                <span>My Services</span>
+                <h2>What I Can Do For You</h2>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card"><div class="service-icon">GD</div><h3>Graphic Design</h3><p>Social media posts, banners, branding, print design, marketing creatives and promotional visuals.</p></article>
+                <article class="service-card"><div class="service-icon">VE</div><h3>Video Editing</h3><p>Short-form videos, YouTube editing, reels, promotional videos and engaging visual storytelling.</p></article>
+                <article class="service-card"><div class="service-icon">SM</div><h3>Social Media Content</h3><p>Instagram, Facebook, LinkedIn, TikTok and YouTube content designed for engagement.</p></article>
+                <article class="service-card"><div class="service-icon">AI</div><h3>AI Content Creation</h3><p>AI images, AI videos, concept generation and creative workflows using modern AI tools.</p></article>
+                <article class="service-card"><div class="service-icon">BI</div><h3>Brand Identity</h3><p>Logo design, brand guidelines, typography, colors and complete visual identity systems.</p></article>
+                <article class="service-card"><div class="service-icon">MG</div><h3>Motion Graphics</h3><p>Animated graphics, logo animations, promotional motion content and visual effects.</p></article>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section class="contact section-reveal" id="contact">
+            <div class="section-title">
+                <span>Get In Touch</span>
+                <h2>Let's Build Something Amazing</h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-box"><h3>Email</h3><p><a href="mailto:danishuzair.94@gmail.com">danishuzair.94@gmail.com</a></p></div>
+                    <div class="contact-box">
+                        <h3>Phone &amp; WhatsApp</h3>
+                        <p>
+                            <a href="tel:+923132335288">📞 Call: +92 313 2335288</a><br>
+                            <a href="https://wa.me/923132335288" target="_blank" rel="noopener noreferrer">💬 WhatsApp: +92 313 2335288</a>
+                        </p>
+                    </div>
+                    <div class="contact-box"><h3>Location</h3><p>Karachi, Pakistan</p></div>
+                    <div class="contact-box"><h3>Availability</h3><p>Available for freelance, full-time and international opportunities. Open to relocation worldwide.</p></div>
+                    <div class="contact-box"><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/danishuzair14" target="_blank" rel="noopener noreferrer">linkedin.com/in/danishuzair14</a></p></div>
+                    <div class="contact-box"><h3>Behance</h3><p><a href="https://www.behance.net/danishuzaer" target="_blank" rel="noopener noreferrer">behance.net/danishuzaer</a></p></div>
+                </div>
+
+                <form class="contact-form" id="whatsappForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="primary-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer section-reveal">
+        <a class="footer-logo" href="#home">DU.</a>
+        <p class="footer-text">Graphic Designer &bull; Video Editor &bull; AI Creative</p>
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/danishuzair14" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.behance.net/danishuzaer" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href="mailto:danishuzair.94@gmail.com">Email</a>
+        </div>
+        <p class="copyright">&copy; 2026 Danish Uzair. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const revealItems = document.querySelectorAll(
+            ".section-reveal, .project-card, .about-card, .timeline-item, .skill-card, .service-card, .contact-box, .contact-form"
+        );
+
+        revealItems.forEach((item, index) => {
+            item.classList.add("reveal-item");
+            item.style.setProperty("--delay", `${Math.min(index % 6, 5) * 70}ms`);
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.16, rootMargin: "0px 0px -70px 0px" });
+
+        revealItems.forEach((item) => observer.observe(item));
+
+        window.addEventListener("scroll", () => {
+            document.body.classList.toggle("has-scrolled", window.scrollY > 24);
+        }, { passive: true });
+
+        const orb = document.querySelector(".showcase-orb");
+        if (orb) {
+            window.addEventListener("mousemove", (event) => {
+                const x = (event.clientX / window.innerWidth - 0.5) * 18;
+                const y = (event.clientY / window.innerHeight - 0.5) * 18;
+                orb.style.setProperty("--mouse-x", `${x}px`);
+                orb.style.setProperty("--mouse-y", `${y}px`);
+            }, { passive: true });
+        }
+
+        const whatsappForm = document.querySelector("#whatsappForm");
+        if (whatsappForm) {
+            whatsappForm.addEventListener("submit", (event) => {
+                event.preventDefault();
+
+                const formData = new FormData(whatsappForm);
+                const name = formData.get("name");
+                const email = formData.get("email");
+                const subject = formData.get("subject");
+                const message = formData.get("message");
+
+                const whatsappMessage = `Hi Danish, I visited your portfolio.%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0ASubject: ${encodeURIComponent(subject)}%0AMessage: ${encodeURIComponent(message)}`;
+                window.open(`https://wa.me/923132335288?text=${whatsappMessage}`, "_blank", "noopener,noreferrer");
+            });
+        }
+    </script>
 </body>
 </html>

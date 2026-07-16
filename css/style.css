@@ -180,6 +180,21 @@ a {
     transition: background .3s ease, border-color .3s ease, box-shadow .3s ease;
 }
 
+
+
+.logo,
+.footer-logo {
+    transition: all 0.3s ease;
+}
+
+.logo:hover,
+.footer-logo:hover {
+    color: #8b5cf6;
+    text-shadow: 0 0 8px rgba(139, 92, 246, 0.8),
+                 0 0 18px rgba(139, 92, 246, 0.5);
+    transform: scale(1.05);
+}
+
 .logo,
 .footer-logo {
     font-family: "Space Grotesk", sans-serif;

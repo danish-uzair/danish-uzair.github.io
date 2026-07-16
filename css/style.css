@@ -36,7 +36,7 @@ body {
         radial-gradient(circle at 75% 10%, rgba(34, 211, 238, .09), transparent 28%),
         radial-gradient(circle at 18% 22%, rgba(139, 92, 246, .08), transparent 24%),
         var(--bg);
-    color: var(--yellow);
+    color: var(--white);
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
     background-size: 120% 120%, 120% 120%, auto;

@@ -180,8 +180,6 @@ a {
     transition: background .3s ease, border-color .3s ease, box-shadow .3s ease;
 }
 
-
-
 .logo,
 .footer-logo {
     font-family: "Space Grotesk", sans-serif;
@@ -218,7 +216,7 @@ nav a::after {
 }
 
 nav a:hover {
-    color: red !important;
+    color: var(--white);
 }
 
 nav a:hover::after {

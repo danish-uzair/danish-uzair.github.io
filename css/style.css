@@ -189,6 +189,17 @@ a {
     letter-spacing: .01em;
 }
 
+.logo {
+    color: var(--white);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    color: var(--cyan);
+    text-shadow: 0 0 18px rgba(34, 211, 238, .55);
+}
+
 nav ul {
     display: flex;
     gap: 28px;

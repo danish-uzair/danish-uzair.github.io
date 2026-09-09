@@ -161,7 +161,7 @@
         let fallbackIndex = 1;
 
         document.querySelectorAll("video").forEach((video) => {
-            if (!video.dataset.video && !video.getAttribute("src")) {
+            if (!video.dataset.video && !video.getAttribute("src") && !video.querySelector("source[src]")) {
                 video.dataset.video = `assets/videos/video${fallbackIndex}.mp4`;
                 fallbackIndex += 1;
             }

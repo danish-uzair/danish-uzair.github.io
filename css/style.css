@@ -3,7 +3,7 @@
 =========================== */
 
 :root {
-    --bg: #090b0f;
+    --bg: #0b0d12;
     --surface: #141820;
     --surface-2: #191e28;
     --white: #f7f8fb;
@@ -196,7 +196,7 @@ a {
     z-index: 10;
     width: min(90%, var(--container));
     margin: 0 auto;
-    padding: 22px 0;
+    padding: 17px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -627,6 +627,7 @@ section {
 }
 
 .projects,
+.showreel,
 .about,
 .experience,
 .skills,
@@ -634,12 +635,12 @@ section {
 .contact {
     width: min(90%, var(--container));
     margin: 0 auto;
-    padding: 88px 0;
+    padding: 72px 0;
 }
 
 .section-title {
     max-width: 720px;
-    margin: 0 auto 46px;
+    margin: 0 auto 38px;
     text-align: center;
 }
 
@@ -654,6 +655,38 @@ section {
     color: var(--text);
     font-size: 16px;
     line-height: 1.8;
+}
+
+/* ===========================
+   FEATURED SHOWREEL
+=========================== */
+
+.showreel {
+    text-align: center;
+}
+
+.showreel-frame {
+    width: min(100%, 980px);
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .045), rgba(255, 255, 255, .018));
+    box-shadow: 0 26px 80px rgba(0, 0, 0, .34), 0 0 34px rgba(139, 92, 246, .08);
+}
+
+.showreel-frame video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    background: #050607;
+}
+
+.showreel-caption {
+    margin-top: 18px;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.7;
 }
 
 /* ===========================
@@ -712,8 +745,8 @@ section {
 }
 
 .project-image {
-    position: relative;
     overflow: hidden;
+    position: relative;
     aspect-ratio: 16 / 10;
     background: var(--surface);
 }
@@ -723,7 +756,7 @@ section {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: var(--transition);
+    transition: transform 0.4s ease-in-out;
 }
 
 .project-overlay {
@@ -732,9 +765,7 @@ section {
     display: flex;
     align-items: flex-end;
     padding: 22px;
-    background:
-        linear-gradient(135deg, rgba(139, 92, 246, .62), rgba(34, 211, 238, .48)),
-        linear-gradient(180deg, transparent 22%, rgba(0, 0, 0, .82));
+    background: linear-gradient(180deg, transparent 24%, rgba(0, 0, 0, .78));
     color: #fff;
     font-weight: 800;
     text-decoration: none;
@@ -826,27 +857,25 @@ section {
 .skill-card:hover,
 .service-card:hover,
 .contact-box:hover {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     border-color: rgba(34, 211, 238, .42);
-    background:
-        linear-gradient(var(--surface), var(--surface)) padding-box,
-        linear-gradient(135deg, rgba(34, 211, 238, .8), rgba(139, 92, 246, .85)) border-box;
-    box-shadow: 0 18px 55px rgba(0, 0, 0, .22), 0 0 34px rgba(139, 92, 246, .18);
+    background: linear-gradient(180deg, rgba(255, 255, 255, .045), rgba(255, 255, 255, .02));
+    box-shadow: 0 14px 38px rgba(0, 0, 0, .22);
 }
 
 .project-card:hover::before {
-    opacity: 1;
+    opacity: 0;
 }
 
 .project-card:hover::after,
 .skill-card:hover::after,
 .service-card:hover::after,
 .about-card:hover::after {
-    opacity: 1;
+    opacity: 0;
 }
 
-.project-card:hover img {
-    transform: scale(1.08) rotate(.35deg);
+.project-card:hover .project-image img {
+    transform: scale(1.12);
 }
 
 .project-card:hover .project-overlay {
@@ -1279,6 +1308,38 @@ section {
     font-size: 15px;
 }
 
+.timeline-metrics {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline-metrics li {
+    position: relative;
+    padding-left: 22px;
+    color: var(--text);
+    font-size: 16.5px;
+    line-height: 1.75;
+}
+
+.timeline-content p {
+    font-size: 16.5px;
+}
+
+.timeline-metrics li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .75em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--purple), var(--cyan));
+    box-shadow: 0 0 14px rgba(34, 211, 238, .28);
+}
+
 /* ===========================
    CREATIVE STACK
 =========================== */
@@ -1644,13 +1705,14 @@ section {
 
 @media (max-width: 560px) {
     .projects,
+    .showreel,
     .about,
     .experience,
     .skills,
     .services,
     .contact {
         width: 92%;
-        padding: 64px 0;
+        padding: 52px 0;
     }
 
     .hero {

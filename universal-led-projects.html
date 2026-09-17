@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Universal LED Projects | Danish Uzair</title>
+
+    <meta
+        name="description"
+        content="Explore Universal LED social media campaigns and creative projects by Danish Uzair."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category-pages.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar reveal-nav">
+    <a class="logo" href="index.html">
+        <img src="assets/images/logo.webp" alt="">
+    </a>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <!-- MAIN -->
+    <main class="category-page">
+
+        <!-- PAGE INTRO -->
+        <section class="category-work section-reveal">
+
+            <div class="section-title">
+                <span>Universal LED</span>
+
+                <h1>Social Media Campaigns</h1>
+
+                <p>
+                    Explore selected social media campaigns and creative
+                    projects developed for Universal LED.
+                </p>
+            </div>
+
+
+            <!-- CAMPAIGN CARDS -->
+            <div class="category-grid">
+
+                <!-- CAMPAIGN 1 -->
+                <a
+                    class="category-card"
+                    href="universal-led-campaign-01.html"
+                >
+
+                    <div class="category-card-image">
+                        <img
+                            src="assets/images/Social Media images/universalled1.webp"
+                            alt="Universal LED Campaign 1"
+                        >
+                    </div>
+
+                    <div class="category-card-body">
+
+                        <h2>Universal LED Campaign 1</h2>
+
+                        <span class="category-client">
+                            Universal LED
+                        </span>
+
+                        <p>
+                            Social media campaign visuals covering
+                            promotional posts, stories, carousel ads,
+                            motion graphics, and campaign assets.
+                        </p>
+
+                        <div class="tag-row">
+                            <span>Campaign Design</span>
+                            <span>Social Media</span>
+                            <span>LED Signage</span>
+                        </div>
+
+                        <span class="category-card-link">
+                            View Case Study &rarr;
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- CAMPAIGN 2 -->
+                <a
+                    class="category-card"
+                    href="universal-led-campaign-02.html"
+                >
+
+                    <div class="category-card-image">
+                        <img
+                            src="assets/images/Social Media images/universalled2.webp"
+                            alt="Universal LED Campaign 2"
+                        >
+                    </div>
+
+                    <div class="category-card-body">
+
+                        <h2>Universal LED Campaign 2</h2>
+
+                        <span class="category-client">
+                            Universal LED
+                        </span>
+
+                        <p>
+                            A second collection of social media campaign
+                            visuals created for Universal LED's digital
+                            communication and promotional content.
+                        </p>
+
+                        <div class="tag-row">
+                            <span>Social Posts</span>
+                            <span>Campaign Design</span>
+                            <span>Promotional Design</span>
+                        </div>
+
+                        <span class="category-card-link">
+                            View Case Study &rarr;
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- FUTURE CAMPAIGNS GO HERE -->
+
+                <!--
+                <a
+                    class="category-card"
+                    href="universal-led-campaign-03.html"
+                >
+                    <div class="category-card-image">
+                        <img
+                            src="assets/images/Social Media images/universalled3.webp"
+                            alt="Universal LED Campaign 3"
+                        >
+                    </div>
+
+                    <div class="category-card-body">
+
+                        <h2>Universal LED Campaign 3</h2>
+
+                        <span class="category-client">
+                            Universal LED
+                        </span>
+
+                        <p>
+                            Campaign description goes here.
+                        </p>
+
+                        <div class="tag-row">
+                            <span>Social Media</span>
+                            <span>Campaign Design</span>
+                        </div>
+
+                        <span class="category-card-link">
+                            View Campaign &rarr;
+                        </span>
+
+                    </div>
+                </a>
+                -->
+
+            </div>
+
+        </section>
+
+
+        <!-- BACK TO SOCIAL MEDIA -->
+        <section class="category-explore section-reveal">
+
+            <div class="section-title">
+
+                <span>Explore More</span>
+
+                <h2>Back to Social Media Projects</h2>
+
+                <p>
+                    Explore other social media design projects and
+                    campaign collections.
+                </p>
+
+                <a
+                    href="projects-social-media.html"
+                    class="btn btn-primary"
+                >
+                    View Social Media Projects &rarr;
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 Danish Uzair. All rights reserved.
+        </p>
+
+    </footer>
+
+<script>
+const revealItems = document.querySelectorAll(".section-reveal, .category-card");
+
+revealItems.forEach((item, index) => {
+    item.classList.add("reveal-item");
+    item.style.setProperty("--delay", `${Math.min(index % 6, 5) * 70}ms`);
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: .16,
+    rootMargin: "0px 0px -70px 0px"
+});
+
+revealItems.forEach((item) => observer.observe(item));
+
+window.addEventListener("scroll", () => {
+    document.body.classList.toggle("has-scrolled", window.scrollY > 24);
+}, { passive: true });
+</script>
+</body>
+</html>

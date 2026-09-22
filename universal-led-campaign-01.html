@@ -95,50 +95,25 @@
         <section class="ul-gallery section-reveal">
             <h2>Social Media <span>Posts</span></h2>
             <div class="ul-post-grid">
-                <img src="assets/images/Social Media images/universalled1/smm1.jpg" alt="Social media post preview">
-                <img src="assets/images/Social Media images/universalled1/smm2.jpg" alt="Social media post preview">
-                <img src="assets/images/Social Media images/universalled1/smm3.jpg" alt="Social media post preview">
-                <img src="assets/images/Social Media images/universalled1/smm4.jpg" alt="Social media post preview">
-                <img src="assets/images/Social Media images/universalled1/smm5.jpg" alt="Social media post preview">
-                <img src="assets/images/Social Media images/universalled1/smm6.jpg" alt="Social media post preview">
+                <img src="assets/images/Social Media images/universalled1/smm1.webp" alt="Social media post preview">
+                <img src="assets/images/Social Media images/universalled1/smm2.webp" alt="Social media post preview">
+                <img src="assets/images/Social Media images/universalled1/smm3.webp" alt="Social media post preview">
+                <img src="assets/images/Social Media images/universalled1/smm4.webp" alt="Social media post preview">
+                <img src="assets/images/Social Media images/universalled1/smm5.webp" alt="Social media post preview">
+                <img src="assets/images/Social Media images/universalled1/smm6.webp" alt="Social media post preview">
             </div>
         </section>
 
         <section class="ul-gallery section-reveal">
             <h2>Social Ads / <span>Reels</span></h2>
             <div class="ul-story-grid">
-                <img src="assets/images/Social Media images/universalled1/story (1).jpg" alt="Story design">
-                <img src="assets/images/Social Media images/universalled1/story (1).png" alt="Story design">
-                <img src="assets/images/Social Media images/universalled1/story (3).png" alt="Story design">
-                <img src="assets/images/Social Media images/universalled1/story (4).png" alt="Story design">
-                <img src="assets/images/Social Media images/universalled1/story (5).png" alt="Story design">
-                <img src="assets/images/Social Media images/universalled1/story (6).png" alt="Story design">
+                <div data-video="assets/videos/video5.mp4"><img src="assets/images/Social Media images/universalled1/reel1.webp" alt="Motion graphic preview"><b class="ul-play">&#9658;</b><span>00:30</span></div>
+               <div data-video="assets/videos/video4.mp4"><img src="assets/images/Social Media images/universalled1/reel2.webp" alt="Motion graphic preview"><b class="ul-play">&#9658;</b><span>00:30</span></div>
+                <div data-video="assets/videos/video2.mp4"><img src="assets/images/Social Media images/universalled1/reel3.webp" alt="Motion graphic preview"><b class="ul-play">&#9658;</b><span>00:30</span></div>
+                
             </div>
         </section>
-
-        <section class="ul-gallery section-reveal">
-            <h2>Carousel <span>Ads</span></h2>
-            <div class="ul-carousel-row">
-                <button class="ul-carousel-prev" type="button" aria-label="Previous slide">&lsaquo;</button>
-                <div class="ul-carousel-stage">
-                    <div class="ul-carousel-track">
-                        <img class="is-active" src="assets/images/Social Media images/universalled1/slider1.png" alt="Carousel ads preview">
-                        <img src="assets/images/Social Media images/universalled1/slider2.png" alt="Carousel ads preview alternate">
-                        <img src="assets/images/Social Media images/universalled1/slider3.png" alt="Carousel billboard preview">
-                    </div>
-                </div>
-                <button class="ul-carousel-next" type="button" aria-label="Next slide">&rsaquo;</button>
-            </div>
-        </section>
-
-        <section class="ul-gallery section-reveal">
-            <h2>Motion Graphics / <span>Videos</span></h2>
-            <div class="ul-video-grid">
-                <div data-video="assets/videos/video1.mp4"><img src="assets/images/Social Media images/universalled1/video1e.jpg" alt="Motion graphic preview"><b class="ul-play">&#9658;</b><span>00:30</span></div>
-                <div data-video="assets/videos/video2.mp4"><img src="assets/images/Social Media images/universalled1/video2e.jpg" alt="Motion graphic preview"><b class="ul-play">&#9658;</b><span>00:30</span></div>
-                <div data-video="assets/videos/video3.mp4"><img src="assets/images/Social Media images/universalled1/video3e.jpg" alt="Motion graphic preview"><b class="ul-play">&#9658;</b><span>00:30</span></div>
-            </div>
-        </section>
+        
 
         <section class="ul-gallery section-reveal">
             <h2>Design <span>Mockups</span></h2>
@@ -188,7 +163,7 @@
     </main>
 
     <script>
-        const revealItems = document.querySelectorAll(".section-reveal, .ul-stats div, .ul-overview article, .ul-process-row div, .ul-category-row div, .ul-gallery img, .ul-video-grid div, .ul-bottom article");
+        const revealItems = document.querySelectorAll(".section-reveal, .ul-stats div, .ul-overview article, .ul-process-row div, .ul-category-row div, .ul-gallery img, .ul-bottom article");
         revealItems.forEach((item, index) => {
             item.classList.add("reveal-item");
             item.style.setProperty("--delay", `${Math.min(index % 6, 5) * 70}ms`);

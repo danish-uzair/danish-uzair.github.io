@@ -2332,8 +2332,8 @@ section {
 }
 
 .ul-story-grid {
-    width: min(1500px, 100%);
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    width: min(1000px, 100%);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin-left: auto;
     margin-right: auto;
 }
@@ -2666,7 +2666,7 @@ section {
 }
 
 .ul-story-grid img {
-    height: 330px;
+    height: 560px;
     padding: 8px;
     border-radius: 24px;
     background:
